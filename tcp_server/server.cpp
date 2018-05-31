@@ -48,7 +48,7 @@ int main(int argc, char** argv)
 
 	printf("============waiting for client's request=====================\n");
 	while (1) {
-		/////connect()
+		/////accept()
 		if ( (connfd = accept(listenfd, (struct sockaddr*)NULL, NULL)) == -1) {
 			printf("accept socket error\n");
 			continue;
